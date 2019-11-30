@@ -1,0 +1,203 @@
+<!--Versión del HTML-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--Función en js que muestra la hora-->
+<script>
+    function ver_horas()
+    {
+        var mihora = new Date();
+        var horas = mihora.getHours().toString();
+        var minutos =mihora.getMinutes().toString();
+        if(minutos.length == 1) minutos="0" + minutos;
+        var segundos =mihora.getSeconds().toString();
+        if(segundos.length == 1 ) segundos="0"+ segundos;
+        document.forms[0].mireloj.value= "Hora actual: " + horas + ":" + minutos + ":"+ segundos; 
+    }
+</script>
+<title>PokeDUOC</title>
+<!--Función js que avisa que la pagina utilizá cookies-->
+<script>
+    alert("Esta página utiliza utiliza cookies para mejorar la experiencia del usuario dentro de su sesión");
+</script>
+<link rel="stylesheet" href="css/flexboxgrid.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+
+<!-- Librerias del css (para darle forma al carrusel de imagenes) -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<!-- Librerias del js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Libreria del js-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+</head>
+<body style="background:#0069A5;">
+    <form>
+    <p align="center">
+        <input id="colour" type="text" size="20" name="mireloj">
+    </p>
+    </form>
+<script>
+    var r = setInterval("ver_horas()",500);
+</script>
+
+<div class="row"><!--seccion-->
+<div class="col-lg-2 cols-12" >
+    <div class="box">
+        <a href="index.html">
+        <img src="imagenes/logo.png" width="91.5%">
+    </a>
+    </div>
+</div>
+    <div class="col-lg-2 col-xs-12">
+        <div class="box">
+                <a href="index Videojuegos.html">
+                <img src="imagenes/logo 1.png" width="90.2%">
+                </a>
+        </div>
+    </div>
+    <div class="col-lg-2 col-xs-12">
+        <div class="box">
+                <a href="index Competitivo.html">
+                <img src="imagenes/logo 2.png" width="100%">
+                </a>
+        </div>
+    </div>
+    <div class="col-lg-2 col-xs-12">
+        <div class="box">
+                <a href="index Anime.html">
+                <img src="imagenes/logo 3.png" width="60%">
+                </a>
+        </div>
+    </div>
+        <div class="col-lg-2 col-xs-12">
+            <div class="box">
+                <a href="index Manga.html">
+                <img src="imagenes/logo 4.png" width="55%">
+                </a>
+            </div>
+        </div> 
+
+<div class="col-lg-1 col-xs-12">
+                <div  class="box" class="owo">
+                    <a href="bruh.html">
+                    <img src="imagenes/burhh.png" width="100%">
+                    </a>
+                </div>
+            </div> 
+   </nav> 
+</div>
+
+
+
+    <div class="row">
+            <div class="col-md-12  " id="imagen" class="centrado">
+                <div class="box">
+                    <!-- Función js del carrusel-->
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                </ol>
+                            
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img id="owo"src="imagenes/PortadaPokimon.jpg" alt="">
+                                        <p id="textonegr">Lanzamiento: 15 de Noviembre 2019</p>
+                                        <p id="textonegr">Solo en Nintendo Switch</p>
+                                    </div>
+                                    <div class="item">
+                                        <img id="owo" src="imagenes/portada5.jpg" alt="">
+                                        <p id="textonegr">Disponible ya en dispositivos Android e IOS</p>
+                                    </div>
+                                    <div class="item">
+                                        <img id="owo" src="imagenes/portada2.jpg" alt="">
+                                    </div>
+                                </div>
+                            
+                                <!-- Controles -->
+                                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+    </div>
+
+
+    <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <!--Función en js que al pusar un botón da información sobre lo que sale en el botón-->
+                        <h3  id="textonegr"> Revisar el Pokemon escogido para el comunity day en pokémon go, solo da click en el siguiente botón</h3>
+                        <button id="kk" onclick="alert('Turtwig - Torterra[Planta/Tierra] - Dia 15 de Septiembre - Hora 11:00 AM - 14:00 PM')">
+                                Ver comunity day de este mes Pokemon GO
+                        </button>
+           
+            </div>
+            </div>
+            </div>
+
+
+
+
+
+    <div class="row" ><!--seccion-->
+        <div class="col-log-6 col-xs-12">
+            <aside>
+            <div class="col-log-6 col-xs-12 " id="quienes" >
+                <h1> ¿De qué se trata pokémon?</h1>
+                <div id="textonegr" class="box" >
+                <br>  Lo básico
+                <br>_________________________________
+                <br>  Los pokemones son criaturas misteriosas que interactuan con los seres humanos 
+                <br>  Cada pokémon tiene sus propias habilidades, donde se pueden encontrar de diferentes tamaños.
+                <br>  Pokémon en nuestro mundo está dividido en varias partes, como por ejemplo videojuegos, mangas, anime, y revisaremos las tiers de cada criatura.
+                <br>
+                <div class="imageniz">
+                <img src="imagenes/DeQesPokemon.jpg" alt="" width="80%" > 
+                </div>
+            </div>
+            </div>
+            </aside>
+        </div>
+            
+
+        <div class="col-log-6 col-xs-12">
+            <article>
+                <div  class="col-log-6 col-xs-12 " id="quienes" >
+                 <h3 > ¿Qué encontrarás en esta página? </h3>
+                    <div id="textonegr" class="box">
+                    <img  src="imagenes/partebaja.jpg "   alt="" width="70%" >
+                        <br>______________________________________________________
+                        <br> Acá encontrarás todas las referencias del mundo sobre pokémon , como lo son los videojuegos, anime, manga e información sobre las tiers
+                        <br> -Videojuegos: Encontrarás todos los videojuegos de la saga pokémon, donde se explicará una breve descripción de cada juego y el año lanzado 
+                        <br> -Manga: Encontrarás que tiene de diferente de los demás
+                        <br> -Anime: Encontrarás toda la información de cada temporada de anime, así como los hitos más importantes 
+                        <br> -Tiers: Una lista de los mejores pokémones por lista
+                        <div id="columna">
+                        <a class="button_1" href="#">Menú Inicio</a>
+                        </div>
+                        </div>
+                    </div>
+                    </article>
+                </div>
+        
+        </div>
+        <!--Libreria Js (Javascript)-->
+        <script src="js/jquery-3.4.1.js"></script>
+        <footer>
+            
+            <p  id="piedepagina" class="centrado"> Desarrollo Aplicaciones Web y Mobile , Todos los derechos reservados a PokeDUOC </p>
+            
+        </footer>
+</body>
+
+
+
+</html>
